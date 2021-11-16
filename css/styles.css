@@ -126,11 +126,11 @@ p {
   fill: var(--primary-text-color);
 }
 .mailo:hover .icon-email,
-.mailo:focus .icon-email:focus {
+.mailo:focus .icon-email {
   fill: var(--accent-color);
 }
 .phone:hover .icon-phone,
-.phone:focus .icon-phone:focus {
+.phone:focus .icon-phone {
   fill: var(--accent-color);
 }
 
@@ -324,18 +324,26 @@ p {
 }
 
 .clients-item {
-  border: 1px solid #afb1b8;
   width: 170px;
   height: 92px;
+}
+.clients-link {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #afb1b8;
   border-radius: 4px;
   padding: 16px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 .clients {
   fill: #afb1b8;
 }
 
-.clients-item:hover,
-.clients-item:focus {
+.clients-link:hover,
+.clients-link:focus {
   border-color: var(--accent-color);
 }
 
