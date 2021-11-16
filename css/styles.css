@@ -125,8 +125,12 @@ p {
   margin-right: 10px;
   fill: var(--primary-text-color);
 }
-.icon-email:hover,
-.icon-email:focus {
+.mailo:hover .icon-email,
+.mailo:focus .icon-email:focus {
+  fill: var(--accent-color);
+}
+.phone:hover .icon-phone,
+.phone:focus .icon-phone:focus {
   fill: var(--accent-color);
 }
 
@@ -260,10 +264,6 @@ p {
 .team-icon {
   fill: #afb1b8;
 }
-.team-icon:hover,
-.team-icon:focus {
-  fill: var(--white-color);
-}
 
 .team-icon-item {
   height: 44px;
@@ -279,9 +279,14 @@ p {
   justify-content: center;
 }
 
-.team-icon-item:hover,
-.team-icon-item:focus {
+.team-link:hover,
+.team-link:focus {
   background-color: var(--accent-color);
+  fill: var(--fill-clients-color);
+}
+.team-link:hover .team-icon,
+.team-link:focus .team-icon {
+  fill: var(--white-color);
 }
 
 .team-item {
@@ -328,9 +333,16 @@ p {
 .clients {
   fill: #afb1b8;
 }
-.clients:hover,
-.clients:focus {
+
+.clients-item:hover,
+.clients-item:focus {
+  border-color: var(--accent-color);
+}
+
+.clients-link:hover .clients,
+.clients-link:focus .clients {
   fill: var(--accent-color);
+  border-color: var(--accent-color);
 }
 
 .clients-item:not(:last-child) {
@@ -385,7 +397,7 @@ footer {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 700;
   font-style: normal;
   margin-bottom: 20px;
 }
@@ -446,7 +458,6 @@ footer {
   background-color: var(--secondary-bgc-color);
   font-weight: 500;
   line-height: 1.62;
-  min-width: 103px;
 
   font-size: 16px;
   cursor: pointer;
@@ -534,3 +545,11 @@ footer {
   display: flex;
   align-items: baseline;
 }
+
+/* .contact-info .mailo:hover,
+.contact-info .mailo:focus,
+.contact-info .phone:hover,
+.contact-info .phone:focus {
+  color: var(--accent-color);
+  fill: var(--accent-color);
+} */
